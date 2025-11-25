@@ -49,7 +49,7 @@ function Typography({
   variant,
   color,
   asChild = false,
-  props
+  ...props
 }: typographyProps<React.ElementType>) {
   const Comp = asChild ? Slot : as || 'p';
   return (
