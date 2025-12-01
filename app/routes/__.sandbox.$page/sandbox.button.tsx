@@ -1,11 +1,14 @@
 import * as React from 'react';
 import { ArrowRight, Plus, Save } from 'lucide-react';
 import { Button } from '~/components/shadcn/ui/button';
+import { Typography } from '~/components/shadcn/ui/typography';
 
 export default function ButtonPage() {
-  return <div>
+  return <>
     <div className='mt-8'>
-      Primary
+      <Typography as='h6' variant='h6'>
+        Primary
+      </Typography>
       <div className='flex flex-wrap items-end gap-3'>
         <Button variant='default' size="lg" type='submit'>Primary Button</Button>
         <Button variant='default' size="default" leftIcon={Plus} rightIcon={ArrowRight} type='submit'>
@@ -22,7 +25,9 @@ export default function ButtonPage() {
         <Button variant='default' size="default" type='submit' disabled>Primary Button</Button>
         <Button variant='default' size="sm" type='submit' disabled>Primary Button</Button>
       </div>
-      Destructive
+      <Typography as='h6' variant='h6'>
+        Destructive
+      </Typography>
       <div className='flex flex-wrap items-end gap-3'>
         <Button variant='destructive' size="lg" type='submit'>Destructive Button</Button>
         <Button variant='destructive' size="default" leftIcon={Plus} rightIcon={ArrowRight} type='submit'>
@@ -39,7 +44,9 @@ export default function ButtonPage() {
         <Button variant='destructive' size="default" type='submit' disabled>Destructive Button</Button>
         <Button variant='destructive' size="sm" type='submit' disabled>Destructive Button</Button>
       </div>
-      Outline
+      <Typography as='h6' variant='h6'>
+        Outline
+      </Typography>
       <div className='flex flex-wrap items-end gap-3'>
         <Button variant='outline' size="lg" type='submit'>Outline Button</Button>
         <Button variant='outline' size="default" leftIcon={Plus} rightIcon={ArrowRight} type='submit'>
@@ -56,7 +63,9 @@ export default function ButtonPage() {
         <Button variant='outline' size="default" type='submit' disabled>Outline Button</Button>
         <Button variant='outline' size="sm" type='submit' disabled>Outline Button</Button>
       </div>
-      Secondary
+      <Typography as='h6' variant='h6'>
+        Secondary
+      </Typography>
       <div className='flex flex-wrap items-end gap-3'>
         <Button variant='secondary' size="lg" type='submit'>Secondary Button</Button>
         <Button variant='secondary' size="default" leftIcon={Plus} rightIcon={ArrowRight} type='submit'>
@@ -73,7 +82,9 @@ export default function ButtonPage() {
         <Button variant='secondary' size="default" type='submit' disabled>Secondary Button</Button>
         <Button variant='secondary' size="sm" type='submit' disabled>Secondary Button</Button>
       </div>
-      Ghost
+      <Typography as='h6' variant='h6'>
+        Ghost
+      </Typography>
       <div className='flex flex-wrap items-end gap-3'>
         <Button variant='ghost' size="lg" type='submit'>Ghost Button</Button>
         <Button variant='ghost' size="default" leftIcon={Plus} rightIcon={ArrowRight} type='submit'>
@@ -90,7 +101,9 @@ export default function ButtonPage() {
         <Button variant='ghost' size="default" type='submit' disabled>Ghost Button</Button>
         <Button variant='ghost' size="sm" type='submit' disabled>Ghost Button</Button>
       </div>
-      Link
+      <Typography as='h6' variant='h6'>
+        Link
+      </Typography>
       <div className='flex flex-wrap items-end gap-3'>
         <Button variant='link' size="lg" type='submit'>Link Button</Button>
         <Button variant='link' size="default" leftIcon={Plus} rightIcon={ArrowRight} type='submit'>
@@ -108,5 +121,5 @@ export default function ButtonPage() {
         <Button variant='link' size="sm" type='submit' disabled>Link Button</Button>
       </div>
     </div>
-  </div>
+  </>
 }
