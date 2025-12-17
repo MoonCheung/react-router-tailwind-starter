@@ -11,7 +11,7 @@ const componentMap = {
   textarea: React.lazy(() => import('./sandbox.textarea')),
   toast: React.lazy(() => import('./sandbox.toast')),
   dialog: React.lazy(() => import('./sandbox.dialog')),
-  modal: React.lazy(() => import('./sandbox.modal')),
+  modal: React.lazy(() => import('./sandbox.modal'))
   // ... 加 100 个都没问题，只需一行
 } as const
 
