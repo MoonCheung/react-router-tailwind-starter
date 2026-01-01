@@ -49,7 +49,7 @@ const ConformInput = <Schema,>({
         <div>
           {metadata.errors.map((e, index) => (
             // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-            <p key={index} className="py-2 text-red-500">
+            <p key={index} className="pt-1 text-red-500 text-[0.625rem] leading-[0.625rem]">
               {e}
             </p>
           ))}
