@@ -1,24 +1,20 @@
-import type { Route } from './+types/sandbox'
 import { Link } from 'react-router';
 import { Button } from '~/components/shadcn/ui/button';
-
-export function meta({}: Route.MetaArgs) {
-  return [{ name: 'description', content: 'Welcome to React Router Sandbox!' }]
-}
+import { Typography } from '~/components/shadcn/ui/typography';
 
 const SandBoxPage = () => {
   return (
     <main>
-      <div className="relative flex min-h-screen flex-col items-center justify-center py-12 text-center">
-        <div className='mt-6'>
-          Sandbox:
-          <div className='mt-2 flex flex-wrap justify-center gap-2'>
-            {sandbox.map(({ title, route }) => (
-              <Button key={route} variant='outline'>
-                <Link key={route} to={route}>{title}</Link>
-              </Button>
-            ))}
-          </div>
+      <div className="relative flex min-h-screen flex-col items-center justify-center text-center">
+        <Typography>
+          Sandbox for Design System:
+        </Typography>
+        <div className='mt-2 flex flex-wrap justify-center gap-2'>
+          {sandbox.map(({ title, route }) => (
+            <Button key={route}>
+              <Link key={route} to={route}>{title}</Link>
+            </Button>
+          ))}
         </div>
       </div>
     </main>
