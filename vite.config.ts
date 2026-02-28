@@ -3,7 +3,7 @@ import autoprefixer from 'autoprefixer'
 import tailwindcss from '@tailwindcss/vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import { reactRouter } from '@react-router/dev/vite'
-
+import { reactRouterDevTools } from "react-router-devtools";
 
 export default defineConfig(({ command }) => ({
   css: {
@@ -14,5 +14,5 @@ export default defineConfig(({ command }) => ({
   ssr: {
     noExternal: command === 'build' ? true : undefined
   },
-  plugins: [reactRouter(), tsconfigPaths(), tailwindcss()]
+  plugins: [reactRouterDevTools(), reactRouter(), tsconfigPaths(), tailwindcss()]
 }))
